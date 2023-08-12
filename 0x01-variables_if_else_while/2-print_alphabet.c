@@ -8,7 +8,7 @@
  * Return: Always - (Success)
 */
 
-char main(void)
+int main(void)
 {
 	char i = 97;
 
@@ -16,5 +16,6 @@ char main(void)
 	{	putchar(i);
 		i++;
 	}
+	putchar('\n');
 	return (0);
 }
