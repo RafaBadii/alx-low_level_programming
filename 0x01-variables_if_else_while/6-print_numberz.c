@@ -3,18 +3,18 @@
 /**
  * main - Entry point
  *
- * Decription: Program prints numbers using putchar func.
+ * Decription: Prints number 0-9 using putchar func.
  *
  * Return: Always - (Success)
 */
 
 int main(void)
 {
-	int i = 0;
+	int i = 48;
 
-	while (i <= 9)
+	while (i < 58)
 	{
-		putchar(i + '0');
+		putchar(i);
 		i++;
 	}
 	putchar("\n");
