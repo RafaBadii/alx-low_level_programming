@@ -33,6 +33,6 @@ int main(void)
 		}
 		num1++;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
