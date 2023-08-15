@@ -1,5 +1,4 @@
 #include "main.h"
-i
 
 /**
  * _islower - function that check if character 'c' is lower case.
