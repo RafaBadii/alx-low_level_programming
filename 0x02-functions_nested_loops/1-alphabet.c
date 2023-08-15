@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * print_alphabet(Program prints the alphabet, in lowercase,using the _putchar).
+ * print_alphabet -  function prints the alphabet, in lowercase using _putchar.
  *
- * Return: voidd
+ * Return: void.
 */
 
 void print_alphabet(void)
