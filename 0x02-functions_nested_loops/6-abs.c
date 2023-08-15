@@ -4,12 +4,14 @@
  * _abs - Computes the absolute value of an integer.
  * @n: The integer.
  *
- * Return: Always - 0 (Success)
+ * Return: Absolute value of n.
 */
 
 int _abs(int n)
 {
 
-	printf("%d\n", n);
-	return (0);
+	if (n < 0)
+		n = n * (-1);
+
+	return (n);
 }
