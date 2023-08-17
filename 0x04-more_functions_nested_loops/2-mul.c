@@ -2,7 +2,15 @@
 
 /**
  * mul - function that multiplies two integers
- * Decription: A C program 
- *
- * Return: Always - (Success)
+ * @a: first input
+ * @b: second input
+ * Return: result
 */
+
+int mul(int a, int b)
+{
+	int result;
+
+	result = a * b;
+	return (result);
+}
