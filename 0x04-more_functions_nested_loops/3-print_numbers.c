@@ -2,15 +2,17 @@
 
 /**
  * print_numbers - function that prints the numbers, from (0-9)
- * @i: int value
- * return: void
+ * return: Always 0
 */
 
-void print_numbers
+void print_numbers(void)
 {
-	for (i = 48; i <= 57; i++)
+	int i = 0;
+
+	while (i <= 9)
 	{
-		_putchar('i');
+		_putchar(i + 48);
+		i++;
 	}
 	_putchar('\n');
 }
