@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - print numbers
  *
- * print_numbers - prints the numbers from 1 to 100, followed by a new line.
+ * prints the numbers from 1 to 100, followed by a new line.
  * print Fizz for numbers that multiples of three
  * print Buzz for numbers that multiples of five
  * For numbers multiples of both three and five print FizzBuzz.
  *
- * Return: Always 0 - Success
+ * Return: Always 0 - (Success)
  */
 
 int main(void)
