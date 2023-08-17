@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * description: prints the numbers from 1 to 100, followed by a new line.
+ * print_numbers - prints the numbers from 1 to 100, followed by a new line.
  * print Fizz for numbers that multiples of three
  * print Buzz for numbers that multiples of five
  * For numbers multiples of both three and five print FizzBuzz.
