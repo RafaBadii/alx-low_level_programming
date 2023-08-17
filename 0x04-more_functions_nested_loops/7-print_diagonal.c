@@ -3,7 +3,7 @@
 /**
  * print_diagonal - function that draws a diagonal line on the terminal
  * @n: number of times \ character should be printed
- * Return: void
+ * Return: print \ if n is greater than 0, otherwise print new line
 */
 
 void print_diagonal(int n)
@@ -15,10 +15,14 @@ void print_diagonal(int n)
 
 	else
 	{
-		for (i = 1; i <= n; i++)   /* repeating time */
+		for (i = 1; i <= n; i++)   /* create space */
 		{
-			for (space = 1; space <= i; space++)
-				_putchar(' ');
+			space = 1;
+			while (space <= i)
+		/*	for (space = 1; space <= i; space++) */
+			{	_putchar(' ');
+				_putchar++;
+			}
 
 			_putchar('\');
 			_putchar('\n');
