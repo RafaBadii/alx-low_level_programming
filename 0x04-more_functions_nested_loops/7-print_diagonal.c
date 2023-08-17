@@ -20,7 +20,7 @@ void print_diagonal(int n)
 			space = 1;
 			while (space <= i)
 		/*	for (space = 1; space <= i; space++) */
-			{	_putchar(' ');
+			{	_putchar(32);
 				_putchar++;
 			}
 
