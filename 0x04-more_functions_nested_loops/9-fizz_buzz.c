@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -7,6 +8,7 @@
  * print Fizz for numbers that multiples of three
  * print Buzz for numbers that multiples of five
  * For numbers multiples of both three and five print FizzBuzz.
+ *
  * Return: Always 0 - Success
  */
 
