@@ -4,13 +4,15 @@
  * swap_int - function swaps the values of two integers
  * @a: int variable
  * @b: int variable
- * Return: Always 0 Success
+ * Return: void
 */
 
 void swap_int(int *a, int *b)
 {
-	int ptr_a = &a;
-	int ptr_b = &b;
+	int swap;
 
-	printf("a=%d, b=%d\n", *ptr_b, *ptr_a);
+	swap = *a;	/* swap = a = 98 */
+	*a = *b;	/* a = b = 42 */
+	*b = swap;	/* b = swap = a = 98 */
+
 }
