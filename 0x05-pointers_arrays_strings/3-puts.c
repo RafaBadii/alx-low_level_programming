@@ -10,8 +10,8 @@ void _puts(char *str)
 {
 	while (*str != '\0')
 	{
-		_putchar(*str + 0);	/* Ascii */
+		putchar(*str + 0);	/* Ascii */
 		str++;		/* address increment */
 	}
-	_putchar('\n');
+	putchar('\n');
 }
