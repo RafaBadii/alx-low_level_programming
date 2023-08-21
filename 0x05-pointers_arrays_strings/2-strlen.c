@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int count;
 
-	for (count = 0; *s != '\0'; s++)	/* '\0': end of the string */
+	for (count = 0; *s != '\0'; *s++)	/* '\0': end of the string */
 	{
 		count++;
 	}
