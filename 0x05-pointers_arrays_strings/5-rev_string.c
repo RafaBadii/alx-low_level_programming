@@ -9,14 +9,18 @@
 
 void rev_string(char *s)
 {
-	int i = 0;
+	int i, I;
+	int rev;
 
-	while (s[i])  /* count the length of the string */
-		i++;
-
-	while (i--)
+	for (i = 0; s[i] != '\0'; i++) /* count the length of the string */
 	{
-		_putchar(s[i]);
 	}
-	_putchar('\n');
+
+	for (I = 0; I < i / 2; I++)
+	{
+		rev = s[I];
+		s[I] = s[i - 1 - I];
+		s[i - 1 - I] = rev;
+	}
+	
 }
