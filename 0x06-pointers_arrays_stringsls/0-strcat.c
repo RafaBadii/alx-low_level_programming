@@ -9,17 +9,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, x;
+	int i, j;
 
-	/* find the size of dest */
-	for (i = 0; *dest[i] != '\0'; i++)
+	for (i = 0; dest[i] != '\0'; i++)
 		;
 
-	for (x = 0; *src[x] != '\0'; x++)
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		*dest[i] = *src[x];
+		dest[i] = src[j];
 		i++;
 	}
-	*dest[i] = '\0';
-	return (*dest);
+
+	dest[i] = '\0';
+	return (dest);
 }
