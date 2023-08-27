@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - Function that reverse the content of an array of int
- * @string: string
+ * @str: string
  * Return: string str
  */
 char *string_toupper(char *str)
