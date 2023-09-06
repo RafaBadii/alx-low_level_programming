@@ -2,19 +2,19 @@
 
 /**
  * wrdcnt - Function counts number of words in string
- * @str: string
+ * @s: string
  * Return: int
 */
 
-int wrdcnt(char *str)
+int wrdcnt(char *s)
 {
 	int i, n = 0;
 
-	for (i = 0; str[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
-		if (str[i] == ' ')
+		if (s[i] == ' ')
 		{
-			if (str[i + 1] != ' ' && str[i + 1] != '\0')
+			if (s[i + 1] != ' ' && s[i + 1] != '\0')
 				n++;
 		}
 			else if (i == 0)
@@ -25,7 +25,7 @@ int wrdcnt(char *str)
 }
 
 /**
- * strtow - Function split a string to words
+ * strtow - split a string to words
  * @str: string
  * Return: pointer
 */
@@ -37,17 +37,14 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
-
 	num = wrdcnt(str);
 	if (num == 1)
 		return (NULL);
 	w = (char **)malloc(sizeof(char *));
 	if (w == NULL)
 		return (NULL);
-
 	w[num - 1] = NULL;
 	i = 0;
-
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
@@ -56,7 +53,6 @@ char **strtow(char *str)
 				;
 			j++;
 			w[wc] = (char *)malloc(j * sizeof(char));
-
 			j--;
 			if (w[wc] == NULL)
 			{
@@ -64,7 +60,7 @@ char **strtow(char *str)
 					free(w[x]);
 				free(w[num - 1]);
 				free(w);
-			return (NULL);
+				return (NULL);
 			}
 			for (y = 0; y < j; y++)
 				w[wc][y] = str[i + y];
