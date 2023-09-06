@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - prints all arguments received.
@@ -10,18 +11,24 @@
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	char *c;	i
+	int x, y, sum;
 
-	while (--argc) /* Not count prog Name */
+	(void)argv;
+	sum = 0;
+	if (argc > 1)
 	{
-		for (c = argv[argc]; *c; c++)
-			if (*c < '0' || *c > '9')
+		for (x = 1; x < argc; x++)
+		{
+			for (y = 0; argv[x][y] != '\0'; y++)
 			{
-				printf("Error\n");
-				return (1);
+				if (!isdigit(argv[x][y]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
-		sum += atoi(argv[argc]);
+			sum += atoi(argv[x]);
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
