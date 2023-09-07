@@ -32,13 +32,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-
 	ptr = malloc(sizeof(int) * nmemb);
 
 	if (ptr == 0)
 		return (NULL);
 
 	_memset(ptr, 0, sizeof(int) * nmemb); /*Zeros*/
-
 	return (ptr);
 }
